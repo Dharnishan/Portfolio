@@ -26,3 +26,6 @@ header ul li {
 .mobile-nav li {
   @apply w-full h-full text-center border-b-2;
 }
+html{
+  scroll-behavior: smooth;
+}

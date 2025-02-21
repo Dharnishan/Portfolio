@@ -1,6 +1,6 @@
 import ResumeImg from '../Assests/resume.jpg';
 export default function Resume(){
-    return <section className='flex flec-col md:flex-row flex bg-primary px-5'>
+    return <section id='resume' className='flex flec-col md:flex-row flex bg-primary px-5'>
         <div className='py-5 md:w-1/2 flex justify-end'>
             <img className='w-[500px]' src={ResumeImg}></img>
         </div>

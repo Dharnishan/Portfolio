@@ -1,3 +1,3 @@
 export default function Footer(){
-    return 
+    return <div className="py-4 bg-primary text-white text-center">&copy; Dharnishan</div>
 }

@@ -1,6 +1,6 @@
 import ResumeImg from '../Assests/resume.jpg';
 export default function Contact(){
-    return <section className='flex flex-col  bg-secondary px-5 py-32'>
+    return <section id='contact'className='flex flex-col  bg-secondary px-5 py-32'>
         
         <div className=' flex flex-col items-center'>
            
