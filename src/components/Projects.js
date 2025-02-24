@@ -34,12 +34,17 @@ export default function Projects(){
             <div className='flex px-10 gap-5'>
                 {config.projects.map((project)=> ( 
                    
-                    <div className='relative'>
+                <div className='relative'>
                     <img className='h-[200px] w-[500px]' src={project.image}></img>
                     <div className='project-desc'>
                         <p className='text-center px-5 py-5 text-white'>{project.description}</p>
+                        <div className='flex justify-center text-white'>
+                            <a className='btn' target='_blank' href={project.link}>View Project</a>
+                        </div>
                     </div>
+                    
                 </div>
+                
                 
                 ))}
                 

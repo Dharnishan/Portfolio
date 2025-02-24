@@ -17,7 +17,7 @@ header ul li {
 }
 
 .btn{
-  @apply bg-primary px-5 py-2 font-bold border-2 hover:bg-slate-500 border-yellow-50 rounded;
+  @apply bg-primary px-5 py-2 font-bold border-2 hover:bg-lime-400 border-yellow-50 rounded;
 }
 
 .mobile-nav{
