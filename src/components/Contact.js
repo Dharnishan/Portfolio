@@ -9,8 +9,8 @@ export default function Contact(){
            
             <b><h1 className='text-4xl text-black border-black border-b-4 mb-4 w-[135px]'>Contact</h1></b>
             <p className='text-black'>If you wants discuss more in detail, please contact me. </p>
-            <p className='py-2'><span className='font-bold'>Email:</span></p>
-            <p className='py-2'><span className='font-bold'>Phone:</span></p>
+            <p className='py-2'><span className='font-bold'>Email:</span>{config.email}</p>
+            <p className='py-2'><span className='font-bold'>Phone:</span>{config.phone}</p>
             
             
             
