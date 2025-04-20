@@ -2,30 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-header ul li {
-  @apply px-2;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-.bg-primary{
-  background: rgb(9, 9, 9);
-}
-.bg-secondary{
-  background: rgb(255, 255, 255);
-}
-.project-desc{
-  @apply absolute left-0 right-0 bottom-0 top-0 bg-neutral-700 opacity-0 duration-500 hover:opacity-100;
-}
-
-.btn{
-  @apply bg-primary px-5 py-2 font-bold border-2 hover:bg-lime-400 border-yellow-50 rounded;
-}
-
-.mobile-nav{
-  @apply fixed top-0 left-0 bg-gray-600 w-full h-1/4;
-}
-.mobile-nav li {
-  @apply w-full h-full text-center border-b-2;
-}
-html{
+html {
   scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Animation classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Gradient text */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #4f46e5, #06b6d4);
+}
+
+/* Button hover effect */
+.btn-hover-effect {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-hover-effect:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.btn-hover-effect:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
